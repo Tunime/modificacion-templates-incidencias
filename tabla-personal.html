@@ -34,10 +34,6 @@
   <script src="js/modernizr.min.js"></script>
 </head>
 <body class="dashboard">
-  <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
     <div class="navbar-header">
@@ -508,7 +504,7 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="margin-bottom-15">
-                <button id="addToTable" class="btn btn-outline btn-primary btn-unjbg" type="button">
+                <button id="addToTable" data-toggle="modal" data-target="#mod-nuevopersonal" class="btn btn-outline btn-primary btn-unjbg" type="button">
                   <i class="icon wb-plus" aria-hidden="true"></i> Nuevo Personal
                 </button>
               </div>
@@ -594,7 +590,73 @@
     </div>
   </div>
   <!-- End Page -->
+<!-- contenido de los modales-->
+  <!-- Emodal- de creacion de Personal-->
+  <div class="modal fade" id="mod-nuevopersonal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registro de Personal</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label" >Nombres</label>
+            <input type="name" class="form-control" id="re-nombre">
+          </div>
+          <div class="form-group">
+            <label for="recipient-lastname" class="col-form-label">Apellidos</label>
+            <input type="text" class="form-control" id="re-apellido">
+          </div>
+          <div class="form-group">
+            <label for="recipient-email" class="col-form-label">Correo</label>
+            <input type="email" class="form-control" id="re-correo">
+          </div>
+          <div class="form-group">
+            <label for="recipient-phone" class="col-form-label">Celular</label>
+            <input type="phone" class="form-control" id="re-telefono">
+          </div>
+          <div class="form-group">
+            <label for="recipient-dni" class="col-form-label">DNI</label>
+            <input type="text" class="form-control" id="re-dni">
+          </div>
+          <div class="form-group">
+            <label for="recipient-address" class="col-form-label">Direccion</label>
+            <input type="text" class="form-control" id="re-direcion">
+          </div>
+          <div class="form-group">
+            <label for="selecttipo">Tipo</label>
+            <select class="form-control" id="selecttipo">
+              <option>Administrador</option>
+              <option>Tecnico</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="selecttipo">Especialidad</label>
+            <select class="form-control" id="selecttipo">
+              <option>Hardware</option>
+              <option>software</option>
+            </select>
+          </div>
 
+          <div class="form-group">
+            <label for="recipient-otraespe" class="col-form-label">Otra especialida</label>
+            <input type="text" class="form-control" id="re-otraespe">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button id="addToTable" data-toggle="modal" data-target="#mod-nuevousuario" class="btn btn-outline btn-primary btn-unjbg" type="button">Agregar </button>   
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- modal creacion de cPersonal final -->
+<!-- todos los modles fin -->
 
   <!-- Footer -->
   <footer class="site-footer">
