@@ -542,6 +542,7 @@
                   data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
                   data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <button id="addToTable" data-toggle="modal" data-target="#mod-verpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-eye" aria-hidden="true"></i></button>
                   <button id="addToTable" data-toggle="modal" data-target="#mod-editpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></button>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
                   data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
@@ -557,6 +558,7 @@
                   data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
                   data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <button id="addToTable" data-toggle="modal" data-target="#mod-verpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-eye" aria-hidden="true"></i></button>
                   <button id="addToTable" data-toggle="modal" data-target="#mod-editpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></button>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
                   data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
@@ -572,6 +574,7 @@
                   data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
                   data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <button id="addToTable" data-toggle="modal" data-target="#mod-verpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-eye" aria-hidden="true"></i></button>
                   <button id="addToTable" data-toggle="modal" data-target="#mod-editpersonal" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></button>
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
                   data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
@@ -718,6 +721,64 @@
     </div>
   </div>
   <!-- modal modificacion de cPersonal final -->
+    <!-- modalvisualizar de Personal-->
+  <div class="modal fade" id="mod-verpersonal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Informacion del Personal</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label" >Nombres</label>
+            <h4 id="inf-nombre">Alvaro Anderson</h4>
+          </div>
+          <div class="form-group">
+            <label for="recipient-lastname" class="col-form-label">Apellidos</label>
+            <h4 id="inf-apellido">Morales Cabbalero</h4>
+          </div>
+          <div class="form-group">
+            <label for="recipient-email" class="col-form-label">Correo</label>
+            <h4 id="inf-correo">tunime.1@gmail.com</h4>
+          </div>
+          <div class="form-group">
+            <label for="recipient-phone" class="col-form-label">Celular</label>
+            <h4 id="inf-celular">998 898 987</h4>
+          </div>
+          <div class="form-group">
+            <label for="recipient-dni" class="col-form-label">DNI</label>
+            <h4 id="inf-dni">76471166</h4>
+          </div>
+          <div class="form-group">
+            <label for="recipient-address" class="col-form-label">Direccion</label>
+            <h4 id="inf-direccion">Las americas m-w lt-11</h4>
+          </div>
+          <div class="form-group">
+            <label for="selecttipo">Tipo</label>
+            <h4 id="inf-tipo">Administrador</h4>
+          </div>
+          <div class="form-group">
+            <label for="selecttipo">Especialidad</label>
+            <h4 id="inf-especialidad">software</h4>
+          </div>
+
+          <div class="form-group">
+            <label for="recipient-otraespe" class="col-form-label">Otra especialida</label>
+            <h4 id="inf-direccion">Soft- libre</h4>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- modal visualizar de cPersonal final -->
 <!-- todos los modles fin -->
 
   <!-- Footer -->
