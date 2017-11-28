@@ -459,25 +459,45 @@
 
   <!-- Page -->
   <div class="page animsition">
-    <div class="page-content padding-30 container-fluid">
-      <div class="row" data-plugin="matchHeight" data-by-row="true">
-
-        <!-- Panel Table Add Row -->
-      <div class="panel">
-        <header class="panel-heading">
-          <h3 class="panel-title">Registro de personal</h3>
-        </header>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="margin-bottom-15">
-                <button id="addToTable" data-toggle="modal" data-target="#mod-nuevopersonal" class="btn btn-outline btn-primary btn-unjbg" type="button">
-                  <i class="icon wb-plus" aria-hidden="true"></i> Nuevo Personal
-                </button>
+    <div class="page-content container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Page Widget -->
+          <div class="widget widget-shadow text-center perfil">
+            <div class="widget-header">
+              <div class="widget-header-content">
+                <a class="avatar avatar-lg" href="javascript:void(0)">
+                  <img src="../../global/portraits/5.jpg" alt="...">
+                </a>
+                <h4 class="profile-user">Alvaro Anderson Morales Caballero</h4>
+                <br>
+                <p class="profile-job">Usuario : Alvaromoca</p>
+                <p class="profile-job">Email : tunime.1@gmail.com</p>
+                <p class="profile-job">Celular : 989 987 876</p>
+              <br>
+              </div>
+            </div>
+            <div class="widget-footer">
+              <div class="row no-space">
+                <div class="col-xs-5">
+                  <strong class="profile-stat-count">10</strong><br>
+                  <span>Sin asignar</span>
+                </div>
+                <div class="col-xs-6">
+                  <strong class="profile-stat-count">48</strong><br>
+                  <span>Mis insidencias</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row"><div class="col-sm-6">
+          <!-- End Page Widget -->
+        </div>
+
+        <div class="col-md-9">
+          <!-- Panel -->
+          <div class="panel">
+            <div class="panel-body nav-tabs-animate nav-tabs-horizontal">
+                <div class="row"><div class="col-sm-6">
             <div class="dataTables_length" id="exampleAddRow_length">
               <label>
                 <select name="exampleAddRow_length" aria-controls="exampleAddRow" class="form-control input-sm">
@@ -551,8 +571,10 @@
             </tbody>
           </table>
         </div>
-      </div>
-
+            </div>
+          </div>
+          <!-- End Panel -->
+        </div>
       </div>
     </div>
   </div>
