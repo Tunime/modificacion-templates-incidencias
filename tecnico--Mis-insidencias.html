@@ -235,42 +235,25 @@
 
   <!-- Page -->
   <div class="page animsition">
-    <div class="page-content container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <!-- Page Widget -->
-          <div class="widget widget-shadow text-center perfil">
-            <div class="widget-header">
-              <div class="widget-header-content">
-                <h4 class="profile-user">Alvaro Anderson Morales Caballero</h4>
-                <br>
-                <p class="profile-job">Usuario : Alvaromoca</p>
-                <p class="profile-job">Email : tunime.1@gmail.com</p>
-                <p class="profile-job">Celular : 989 987 876</p>
-              <br>
-              </div>
-            </div>
-            <div class="widget-footer">
-              <div class="row no-space">
-                <div class="col-xs-5">
-                  <strong class="profile-stat-count">10</strong><br>
-                  <span>Sin asignar</span>
-                </div>
-                <div class="col-xs-6">
-                  <strong class="profile-stat-count">48</strong><br>
-                  <span>Mis insidencias</span>
-                </div>
+    <div class="page-content padding-30 container-fluid">
+      <div class="row" data-plugin="matchHeight" data-by-row="true">
+
+        <!-- Panel Table Add Row -->
+      <div class="panel">
+        <header class="panel-heading">
+          <h3 class="panel-title">MIS INSIDENCIAS</h3>
+        </header>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="margin-bottom-15">
+                <button id="addToTable" data-toggle="modal" data-target="#mod-solicitud" class="btn btn-outline btn-primary btn-unjbg" type="button">
+                  <i class="icon wb-plus" aria-hidden="true"></i> Nueva Incidencia
+                </button>
               </div>
             </div>
           </div>
-          <!-- End Page Widget -->
-        </div>
-
-        <div class="col-md-9">
-          <!-- Panel -->
-          <div class="panel">
-            <div class="panel-body nav-tabs-animate nav-tabs-horizontal">
-                <div class="row"><div class="col-sm-8">
+          <div class="row"><div class="col-sm-6">
             <div class="dataTables_length" id="exampleAddRow_length">
               <label>
                 <select name="exampleAddRow_length" aria-controls="exampleAddRow" class="form-control input-sm">
@@ -280,7 +263,7 @@
                   <option value="100">100</option>
                 </select>
               </label>
-            </div></div><div class="col-sm-4"><div id="exampleAddRow_filter" class="dataTables_filter"><label><input type="search" class="form-control input-sm" placeholder="Buscar.." aria-controls="exampleAddRow"></label></div></div></div>
+            </div></div><div class="col-sm-6"><div id="exampleAddRow_filter" class="dataTables_filter"><label><input type="search" class="form-control input-sm" placeholder="Buscar.." aria-controls="exampleAddRow"></label></div></div></div>
           <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
             <thead>
               <tr>
@@ -288,89 +271,122 @@
                 <th>Fecha de registro</th>
                 <th>Categoria</th>
                 <th>Estado</th>
+                <th>Oficina</th>
+                <th>Accion</th>
               </tr>
             </thead>
             <tbody>
               <tr class="gradeA">
                 <td>1</td>
-                <td>0-3-09-2017</td>
-                <td>Impresoras</td>
-                <td>pedientes</td>
+                <td>03-09-2017</td>
+                <td>IMpresora</td>
+                <td>Pediente</td>
+                <td>DASA</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing save-row"
+                  data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
+                  data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <button id="addToTable" data-toggle="modal" data-target="#mod-editusuario" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></button>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
+                  data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
+                </td>
               </tr>
               <tr class="gradeA">
                 <td>2</td>
-                <td>05-09-2017</td>
-                <td>Proyector</td>
-                <td>atendido</td>
+                <td>03-09-2017</td>
+                <td>IMpresora</td>
+                <td>Pediente</td>
+                <td>OSIS</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing save-row"
+                  data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
+                  data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
+                  data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
+                </td>
               </tr>
               <tr class="gradeA">
                 <td>3</td>
-                <td>05-04-2017</td>
-                <td>computadora</td>
-                <td>pendiente</td>
+                <td>03-09-2017</td>
+                <td>IMpresora</td>
+                <td>Pediente</td>
+                <td>ESIS</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing save-row"
+                  data-toggle="tooltip" data-original-title="Save"><i class="icon wb-wrench" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
+                  data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
+                  data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></a>
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
+                  data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
+                </td>
               </tr>
+              
             </tbody>
           </table>
         </div>
-            </div>
-          </div>
-          <!-- End Panel -->
-        </div>
+      </div>
+
       </div>
     </div>
   </div>
   <!-- End Page -->
 <!-- contenido de los modales-->
     <!-- modalvisualizar de Personal-->
-  <div class="modal fade" id="mod-verpersonal" role="dialog">
+  <div class="modal fade" id="mod-solicitud" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Informacion del Personal</h4>
+          <h4 class="modal-title">Nueva solicitud</h4>
         </div>
         <div class="modal-body">
           <form>
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label" >Nombres</label>
-            <h4 id="inf-nombre">Alvaro Anderson</h4>
+            <label for="recipient-name" class="col-form-label" >categorias</label>
+            <select name="dola" class="form-control" id="">
+              <option value="valor1">Impresora</option>
+              <option value="valor2">harware</option>
+            </select>
           </div>
           <div class="form-group">
-            <label for="recipient-lastname" class="col-form-label">Apellidos</label>
-            <h4 id="inf-apellido">Morales Cabbalero</h4>
+            <label for="recipient-lastname" class="col-form-label">Descripcion</label>
+            <textarea class="form-control" name="skills" rows="3" placeholder="Pon tu descripcion" required="" data-fv-field="skills"></textarea>
           </div>
           <div class="form-group">
-            <label for="recipient-email" class="col-form-label">Correo</label>
-            <h4 id="inf-correo">tunime.1@gmail.com</h4>
+            <label for="recipient-email" class="col-form-label">Estado</label>
+            <select name="dola" class="form-control" id="">
+              <option value="valor1">Pendiente</option>
+              <option value="valor2">En curso</option>
+              <option value="valor3">Derivar</option>
+              <option value="valor4">Cerrado</option>
+            </select>
           </div>
           <div class="form-group">
-            <label for="recipient-phone" class="col-form-label">Celular</label>
-            <h4 id="inf-celular">998 898 987</h4>
-          </div>
-          <div class="form-group">
-            <label for="recipient-dni" class="col-form-label">DNI</label>
-            <h4 id="inf-dni">76471166</h4>
-          </div>
-          <div class="form-group">
-            <label for="recipient-address" class="col-form-label">Direccion</label>
-            <h4 id="inf-direccion">Las americas m-w lt-11</h4>
-          </div>
-          <div class="form-group">
-            <label for="selecttipo">Tipo</label>
-            <h4 id="inf-tipo">Administrador</h4>
-          </div>
-          <div class="form-group">
-            <label for="selecttipo">Especialidad</label>
-            <h4 id="inf-especialidad">software</h4>
-          </div>
+            <label for="recipient-phone" class="col-form-label">imagen</label>
+            <div class="form-group">
+              <div class="input-group input-group-file">
+                <input type="text" class="form-control" readonly="">
+                <span class="input-group-btn">
+                  <span class="btn btn-success btn-file">
+                    <i class="icon wb-upload" aria-hidden="true"></i>
+                    <input type="file" name="" multiple="">
+                  </span>
+                </span>
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for="recipient-otraespe" class="col-form-label">Otra especialida</label>
-            <h4 id="inf-direccion">Soft- libre</h4>
           </div>
         </form>
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Agregar a FAQ</button>
+          <button type="button" class="btn btn-outline btn-primary btn-unjbg" data-dismiss="modal">Guardar</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
         </div>
       </div>
