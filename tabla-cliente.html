@@ -545,8 +545,8 @@
                   <a href="#" class="btn btn-sm btn-icon btn-pure btn-default hidden on-editing cancel-row"
                   data-toggle="tooltip" data-original-title="Delete"><i class="icon wb-close" aria-hidden="true"></i></a>
                   <button id="addToTable" data-toggle="modal" data-target="#mod-editusuario" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="icon wb-edit" aria-hidden="true"></i></button>
-                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
-                  data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></a>
+                  <button data-target="#mod-eliminar" data-toggle="modal" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row"
+                  data-toggle="tooltip" data-original-title="Remove"><i class="icon wb-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
               <tr class="gradeA">
@@ -590,6 +590,24 @@
   </div>
   <!-- End Page -->
 <!-- contenido de los modales-->
+<!-- Emodal- de eliminacion de cliente-->
+<div class="modal fade" id="mod-eliminar" role="dialog">
+  <div class="modal-dialog">
+  
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Esta seguro de eliminar el contenido</h4>
+      </div>
+      <div class="modal-footer">
+        <button id="addToTable" class="btn btn-outline btn-primary btn-unjbg" type="button">Aceptar</button>   
+        <button type="button" class="btn btn-default" data-dismiss="modal">Canselar</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- modal eliminacion de cliente final -->
   <!-- Emodal- de creacion de cliente-->
   <div class="modal fade" id="mod-nuevousuario" role="dialog">
     <div class="modal-dialog">
