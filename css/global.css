@@ -15,3 +15,27 @@
 .perfil{
 	padding: 1em;
 }
+.card-soluciones{
+	padding: 20px 0 0 0;
+}
+.card--rojo{
+	background: #ff4757;
+	color: white;
+}
+.card--rojo:hover{
+	background: #ee5253	;
+}
+.card--asul{
+	background: #3742fa;
+	color: white;
+}
+.card--asul:hover{
+	background: #341f97;
+}
+.card--amarillo{
+	background: #ffa502;
+	color: white;
+}
+.card--amarillo:hover{
+	background: #feca57;
+}
